@@ -13,9 +13,7 @@ export default function Header() {
                     2xl:items-center  
                     "
             >
-                <img
-                    id="h-portrait"
-                    src={portrait}
+                <div
                     className="
                         px-8 2xl:p-0
                         h-100 sm:max-w-120 md:h-80 lg:h-100 2xl:h-150 2xl:max-w-none
@@ -23,8 +21,21 @@ export default function Header() {
                         md:float-left
                         relative z-1
                         object-cover"
-                    alt=""
-                />
+                >
+                    <img
+                        id="h-portrait"
+                        src={portrait}
+                        className="
+                            w-full h-full object-cover"
+                        alt=""
+                    />
+                    <h2 className="absolute top-15 -right-80 text-7xl text-shadow-lg/80 z-1 hidden md:block 2xl:hidden">
+                        Dylan Simon
+                    </h2>
+                    <h2 className="absolute bottom-3 left-0 right-0 text-center text-5xl text-shadow-lg/80 md:hidden 2xl:block 2xl:text-6xl">
+                        Dylan Simon
+                    </h2>
+                </div>
                 <div
                     id="h-text"
                     className="
@@ -39,14 +50,12 @@ export default function Header() {
                     font-[roboto]
                     "
                 >
-                    <div className="">
-                        <h1 className="font-semibold text-4xl text-center 2xl:text-left">
-                            About Me
-                        </h1>
-                        <p className="text-center 2xl:text-left">
-                            This is my description
-                        </p>
-                    </div>
+                    <h1 className="font-semibold text-4xl text-center 2xl:text-left">
+                        About Me
+                    </h1>
+                    <p className="text-center 2xl:text-left">
+                        This is my description
+                    </p>
                 </div>
                 <div
                     id="h-skew"
