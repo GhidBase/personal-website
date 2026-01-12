@@ -1,12 +1,12 @@
 .fade-in {
-    animation-duration: .25s;
+    animation-duration: 1.3s;
     animation-name: fade-in;
     animation-iteration-count: 1;
     animation-direction: normal;
 }
 
 .fade-in-two {
-    animation: .55s 1 normal fade-in-two;
+    animation: .75s 1 normal fade-in-two;
 }
 
 @keyframes fade-in {
@@ -14,8 +14,9 @@
         opacity: 0;
     }
 
-    50% {
+    25% {
         opacity: 0;
+        transform: translateX(10px)
     }
 
     to {
@@ -24,7 +25,7 @@
 }
 
 @keyframes fade-in-two {
-    from, 50% {
+    from, 25% {
         opacity: 0;
         transform: translateY(10px)
     }

@@ -4,13 +4,14 @@ import { Fragment } from "react";
 import "./index.css";
 import "./css/animations.css";
 import Header from "./components/Header";
+import Projects from "./components/Projects";
 
 const aboutMe = (
     <Fragment>
         <p>
             I'm a web developer focused on building user-driven, full-stack
             applications. I work primarily with React, Node.js, PostgreSQL +
-            Prisma, and Tailwind CSS.
+            Prisma, Amazon S3, and Tailwind CSS.
         </p>
         <br />
         <p>
@@ -28,9 +29,12 @@ createRoot(document.getElementById("root")).render(
         <Header
             aboutMe={aboutMe}
             aboutMeClassName="
+              fade-in
               text-center md:text-left
               text-xl md:text-2xl 2xl:text-3xl"
-            aboutMeHeaderClassName="font-semibold text-5xl text-center md:text-left 2xl:mt-5"
+            aboutMeHeaderClassName="fade-in font-semibold text-5xl text-center md:text-left md:mt-5"
         ></Header>
+        <Projects></Projects>
+        <div className="mt-100"></div>
     </StrictMode>,
 );

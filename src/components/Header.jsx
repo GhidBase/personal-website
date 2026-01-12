@@ -8,7 +8,6 @@ export default function Header({
         <div
             id="header"
             className="
-                    fade-in
                     md:mx-auto
                     w-full 2xl:w-full
                     md:max-w-300 2xl:max-w-none
@@ -46,9 +45,9 @@ export default function Header({
                 id="h-text"
                 className="
                     fade-in-two
-                    bg-none md:bg-neutral-800 text-neutral-200
+                    bg-none md:bg-zinc-800 text-neutral-200
                     md:shadow-lg/40
-                    md:h-135 lg:h-110 2xl:h-145
+                    md:h-135 lg:h-115 2xl:h-145
                     m-0 mt-5 2xl:m-0
                     md:my-20 md:mx-20 md:mt-40
                     py-5 px-6
