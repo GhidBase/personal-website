@@ -5,10 +5,10 @@ export default function Header({
     aboutMeHeaderClassName,
 }) {
     return (
-        <div className="">
-            <div
-                id="header"
-                className="
+        <div
+            id="header"
+            className="
+                    fade-in
                     md:mx-auto
                     w-full 2xl:w-full
                     md:max-w-300 2xl:max-w-none
@@ -16,34 +16,36 @@ export default function Header({
                     flex flex-col md:block 2xl:flex 2xl:flex-row
                     2xl:items-center
                     "
-            >
-                <div
-                    className="
+        >
+            <div
+                className="
+                        fade-in-two
                         px-8 2xl:p-0
                         h-100 sm:max-w-120 md:h-80 lg:h-100 2xl:h-150 2xl:max-w-none
                         self-center
                         md:float-left
                         relative z-1
                         object-cover"
-                >
-                    <img
-                        id="h-portrait"
-                        src={portrait}
-                        className="
+            >
+                <img
+                    id="h-portrait"
+                    src={portrait}
+                    className="
                             w-full h-full object-cover
                             shadow-lg/40"
-                        alt=""
-                    />
-                    <h2 className="absolute top-15 -right-80 text-7xl text-shadow-lg/80 z-1 hidden md:block 2xl:hidden">
-                        Dylan Simon
-                    </h2>
-                    <h2 className="absolute bottom-3 left-0 right-0 text-center text-5xl text-shadow-lg/80 md:hidden 2xl:block 2xl:text-6xl">
-                        Dylan Simon
-                    </h2>
-                </div>
-                <div
-                    id="h-text"
-                    className="
+                    alt=""
+                />
+                <h2 className="absolute top-15 -right-80 text-7xl text-shadow-lg/80 z-1 hidden md:block 2xl:hidden">
+                    Dylan Simon
+                </h2>
+                <h2 className="absolute bottom-3 left-0 right-0 text-center text-5xl text-shadow-lg/80 md:hidden 2xl:block 2xl:text-6xl">
+                    Dylan Simon
+                </h2>
+            </div>
+            <div
+                id="h-text"
+                className="
+                    fade-in-two
                     bg-none md:bg-neutral-800 text-neutral-200
                     md:shadow-lg/40
                     md:h-135 lg:h-110 2xl:h-145
@@ -55,22 +57,21 @@ export default function Header({
                     
                     font-[roboto]
                     "
-                >
-                    <h1 className={aboutMeHeaderClassName}>About Me</h1>
-                    <br />
-                    <div className={aboutMeClassName}>{aboutMe}</div>
-                </div>
-                <div
-                    id="h-skew"
-                    className="
+            >
+                <h1 className={aboutMeHeaderClassName}>About Me</h1>
+                <br />
+                <div className={aboutMeClassName}>{aboutMe}</div>
+            </div>
+            <div
+                id="h-skew"
+                className="
                     bg-white/20
                     absolute
                     left-0 right-0 -top-20 md:-top-80
                     h-109 md:h-240 2xl:h-215
                     -skew-y-12 md:-skew-y-14 2xl:-skew-y-15
                     -z-1"
-                ></div>
-            </div>
+            ></div>
         </div>
     );
 }
