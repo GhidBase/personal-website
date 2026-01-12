@@ -1,5 +1,9 @@
 import portrait from "../assets/portrait.jpg";
-export default function Header() {
+export default function Header({
+    aboutMe,
+    aboutMeClassName,
+    aboutMeHeaderClassName,
+}) {
     return (
         <div className="">
             <div
@@ -10,7 +14,7 @@ export default function Header() {
                     md:max-w-300 2xl:max-w-none
                     py-8 md:py-15 2xl:px-40
                     flex flex-col md:block 2xl:flex 2xl:flex-row
-                    2xl:items-center  
+                    2xl:items-center
                     "
             >
                 <div
@@ -26,7 +30,8 @@ export default function Header() {
                         id="h-portrait"
                         src={portrait}
                         className="
-                            w-full h-full object-cover"
+                            w-full h-full object-cover
+                            shadow-lg/40"
                         alt=""
                     />
                     <h2 className="absolute top-15 -right-80 text-7xl text-shadow-lg/80 z-1 hidden md:block 2xl:hidden">
@@ -39,8 +44,9 @@ export default function Header() {
                 <div
                     id="h-text"
                     className="
-                    bg-white/0 md:bg-white text-white md:text-black
-                    md:h-120 2xl:h-135
+                    bg-none md:bg-neutral-800 text-neutral-200
+                    md:shadow-lg/40
+                    md:h-135 lg:h-110 2xl:h-145
                     m-0 mt-5 2xl:m-0
                     md:my-20 md:mx-20 md:mt-40
                     py-5 px-6
@@ -50,12 +56,9 @@ export default function Header() {
                     font-[roboto]
                     "
                 >
-                    <h1 className="font-semibold text-4xl text-center 2xl:text-left">
-                        About Me
-                    </h1>
-                    <p className="text-center 2xl:text-left">
-                        This is my description
-                    </p>
+                    <h1 className={aboutMeHeaderClassName}>About Me</h1>
+                    <br />
+                    <div className={aboutMeClassName}>{aboutMe}</div>
                 </div>
                 <div
                     id="h-skew"
@@ -64,7 +67,8 @@ export default function Header() {
                     absolute
                     left-0 right-0 -top-20 md:-top-80
                     h-109 md:h-240 2xl:h-215
-                    -skew-y-12 md:-skew-y-14 2xl:-skew-y-15"
+                    -skew-y-12 md:-skew-y-14 2xl:-skew-y-15
+                    -z-1"
                 ></div>
             </div>
         </div>
