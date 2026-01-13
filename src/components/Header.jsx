@@ -1,4 +1,7 @@
 import portrait from "../assets/portrait.jpg";
+import email from "../assets/email.svg";
+import linkedIn from "../assets/linkedIn3.svg";
+import github from "../assets/github.svg";
 export default function Header({
     aboutMe,
     aboutMeClassName,
@@ -57,11 +60,24 @@ export default function Header({
                     wrap-break-word
                     transition-all duration-500
                     font-[roboto]
+                    relative
                     "
             >
                 <h1 className={aboutMeHeaderClassName}>About Me</h1>
                 <br />
                 <div className={aboutMeClassName}>{aboutMe}</div>
+                <br />
+                <div
+                    className="flex justify-center md:absolute right-9 bottom-6
+                    gap-12 h-12 mt-2"
+                >
+                    <a href="">
+                        <img src={github} className="h-full" alt="" />
+                    </a>
+                    <a href="">
+                        <img src={linkedIn} className="h-full" alt="" />
+                    </a>
+                </div>
             </div>
             <div
                 id="h-skew"

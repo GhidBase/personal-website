@@ -34,9 +34,8 @@ const projects = [
         description: (
             <Fragment>
                 <p className="will-change-transform text-sm md:text-md xl:text-lg">
-                    Full-stack website + custom CMS built using React, Express,
-                    PostgreSQL, TinyMCE, and Prisma. 700k lifetime views, an
-                    active userbase and a top result on google.
+                    700k views, active users, a custom CMS, server, PostgreSQL,
+                    Prisma, and good Google presence.
                 </p>
             </Fragment>
         ),
@@ -44,6 +43,16 @@ const projects = [
     },
     {
         id: 1,
+        title: "Data Structures Projects",
+        description: (
+            <Fragment>
+                <p>BST, Linked Lists, Hashmaps</p>
+            </Fragment>
+        ),
+        imgSrc: bst,
+    },
+    {
+        id: 2,
         title: "Data Structures Projects",
         description: (
             <Fragment>
@@ -61,10 +70,31 @@ createRoot(document.getElementById("root")).render(
             aboutMeClassName="
               fade-in
               text-center md:text-left
-              text-xl md:text-2xl 2xl:text-3xl"
+              text-xl md:text-xl xl:text-2xl"
             aboutMeHeaderClassName="fade-in font-semibold text-5xl text-center md:text-left md:mt-5"
         ></Header>
-        <Projects projects={projects}></Projects>
-        <Footer></Footer>
+        <br />
+        <br />
+        <h1 className="text-center text-5xl md:text-8xl mt-5 md:mb-4">
+            Projects
+        </h1>
+        <br />
+        <br />
+        <Projects
+            projects={projects}
+            className={`
+                grid
+                grid-cols-[repeat(auto-fit,minmax(250px,1fr))]
+                auto-rows-[350px] xl:auto-rows-[430px]
+                justify-center
+                w-full max-w-300
+                px-6 xl:px-0 lg:mx-auto
+                pb-20
+                gap-10`}
+        ></Projects>
+        <Footer
+            className="md:flex md:gap-16 bg-white/20 md:h-150 flex-1 justify-center items-center md:px-10 lg:px-20 md:py-20"
+            leftClassName="p-6 pt-2 md:p-0! h-100 md:pr-6 flex flex-col gap-6 md:text-md xl:text-lg 2xl:text-xl justify-center"
+        ></Footer>
     </StrictMode>,
 );

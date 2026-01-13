@@ -5,11 +5,12 @@ export default function Project({ title, description, imgSrc }) {
             id={"project-" + title}
             tabIndex={0}
             className="bg-zinc-700
-                w-80 h-100 md:w-150 md:h-150 relative group
+                relative group
                 overflow-hidden
                 scale-100 md:hover:scale-102 
                 transition-all delay-0 duration-500
                 will-change-transform
+                shadow-lg/80
                 "
         >
             <img
@@ -31,6 +32,7 @@ export default function Project({ title, description, imgSrc }) {
                     scale-150 md:scale-200
                     opacity-0 group-focus:opacity-100 md:group-focus:opacity-0 md:group-hover:opacity-100! will-change-[opacity]
                     transition-opacity duration-300
+                    z-1
   "
             >
                 <span
@@ -41,7 +43,7 @@ export default function Project({ title, description, imgSrc }) {
                         opacity-60 backdrop-blur-md
                         border border-white/30
                         text-white font-medium tracking-wide
-                        hover:opacity-80!
+                        hover:opacity-100!
                         transition-all duration-200
     "
                 >
