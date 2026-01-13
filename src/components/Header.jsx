@@ -24,7 +24,9 @@ export default function Header({
                         self-center
                         md:float-left
                         relative z-1
-                        object-cover"
+                        object-cover
+                        transition-all
+                        duration-500"
             >
                 <img
                     id="h-portrait"
@@ -53,7 +55,7 @@ export default function Header({
                     py-5 px-6
                     flex-1
                     wrap-break-word
-                    
+                    transition-all duration-500
                     font-[roboto]
                     "
             >
