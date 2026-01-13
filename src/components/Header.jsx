@@ -36,7 +36,8 @@ export default function Header({
                     src={portrait}
                     className="
                             w-full h-full object-cover
-                            shadow-lg/40"
+                            shadow-lg/40
+                            fade-in-two"
                     alt=""
                 />
                 <h2 className="absolute top-15 -right-80 text-7xl text-shadow-lg/80 z-1 hidden md:block 2xl:hidden">
