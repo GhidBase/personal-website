@@ -5,6 +5,8 @@ import "./index.css";
 import "./css/animations.css";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
+import ldg from "./assets/ldg-2.png";
+import bst from "./assets/BST.webp"
 
 const aboutMe = (
     <Fragment>
@@ -24,6 +26,33 @@ const aboutMe = (
     </Fragment>
 );
 
+const projects = [
+    {
+        id: 0,
+        title: "Lucky Defense Guides",
+        description: (
+            <Fragment>
+                <p className="will-change-transform text-sm md:text-md xl:text-lg">
+                    Full-stack website + custom CMS built using React, Express, PostgreSQL,
+                    TinyMCE, and Prisma. 700k lifetime views, an active userbase and a
+                    top result on google.
+                </p>
+            </Fragment>
+        ),
+        imgSrc: ldg,
+    },
+    {
+        id: 1,
+        title: "Data Structures Projects",
+        description: (
+            <Fragment>
+                <p>BST, Linked Lists, Hashmaps</p>
+            </Fragment>
+        ),
+        imgSrc: bst
+    },
+];
+
 createRoot(document.getElementById("root")).render(
     <StrictMode>
         <Header
@@ -34,7 +63,7 @@ createRoot(document.getElementById("root")).render(
               text-xl md:text-2xl 2xl:text-3xl"
             aboutMeHeaderClassName="fade-in font-semibold text-5xl text-center md:text-left md:mt-5"
         ></Header>
-        <Projects></Projects>
+        <Projects projects={projects}></Projects>
         <div className="mt-100"></div>
     </StrictMode>,
 );
