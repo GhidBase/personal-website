@@ -87,7 +87,8 @@ export default function Header({
                     left-0 right-0 -top-20 md:-top-80
                     h-109 md:h-240 2xl:h-215
                     -skew-y-12 md:-skew-y-14 2xl:-skew-y-15
-                    -z-1"
+                    -z-1
+                    fade-in-two"
             ></div>
         </div>
     );

@@ -68,14 +68,13 @@ createRoot(document.getElementById("root")).render(
         <Header
             aboutMe={aboutMe}
             aboutMeClassName="
-              fade-in
               text-center md:text-left
               text-xl md:text-xl xl:text-2xl"
-            aboutMeHeaderClassName="fade-in font-semibold text-5xl text-center md:text-left md:mt-5"
+            aboutMeHeaderClassName=" font-semibold text-5xl text-center md:text-left md:mt-5"
         ></Header>
         <br />
         <br />
-        <h1 className="text-center text-5xl md:text-8xl mt-5 md:mb-4">
+        <h1 className="text-center text-5xl md:text-8xl mt-5 md:mb-4 fade-in-two">
             Projects
         </h1>
         <br />
@@ -90,10 +89,11 @@ createRoot(document.getElementById("root")).render(
                 w-full max-w-300
                 px-6 xl:px-0 lg:mx-auto
                 pb-20
-                gap-10`}
+                gap-10
+                fade-in-two`}
         ></Projects>
         <Footer
-            className="md:flex md:gap-16 bg-white/20 md:h-150 flex-1 justify-center items-center md:px-10 lg:px-20 md:py-20"
+            className="md:flex md:gap-16 bg-white/20 md:h-150 flex-1 justify-center items-center md:px-10 lg:px-20 md:py-20 fade-in-two"
             leftClassName="p-6 pt-2 md:p-0! h-100 md:pr-6 flex flex-col gap-6 md:text-md xl:text-lg 2xl:text-xl justify-center"
         ></Footer>
     </StrictMode>,
