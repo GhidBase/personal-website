@@ -5,8 +5,9 @@ import "./index.css";
 import "./css/animations.css";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 import ldg from "./assets/ldg-2.png";
-import bst from "./assets/BST.webp"
+import bst from "./assets/BST.webp";
 
 const aboutMe = (
     <Fragment>
@@ -33,9 +34,9 @@ const projects = [
         description: (
             <Fragment>
                 <p className="will-change-transform text-sm md:text-md xl:text-lg">
-                    Full-stack website + custom CMS built using React, Express, PostgreSQL,
-                    TinyMCE, and Prisma. 700k lifetime views, an active userbase and a
-                    top result on google.
+                    Full-stack website + custom CMS built using React, Express,
+                    PostgreSQL, TinyMCE, and Prisma. 700k lifetime views, an
+                    active userbase and a top result on google.
                 </p>
             </Fragment>
         ),
@@ -49,7 +50,7 @@ const projects = [
                 <p>BST, Linked Lists, Hashmaps</p>
             </Fragment>
         ),
-        imgSrc: bst
+        imgSrc: bst,
     },
 ];
 
@@ -64,6 +65,6 @@ createRoot(document.getElementById("root")).render(
             aboutMeHeaderClassName="fade-in font-semibold text-5xl text-center md:text-left md:mt-5"
         ></Header>
         <Projects projects={projects}></Projects>
-        <div className="mt-100"></div>
+        <Footer></Footer>
     </StrictMode>,
 );
