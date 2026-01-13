@@ -8,7 +8,7 @@ export default function Project({ title }) {
             className="bg-zinc-700
                 w-80 h-100 md:w-150 md:h-150 relative group
                 overflow-hidden
-                blur-none hover:blur-xs transition-all delay-0 duration-500"
+                blur-none hover:blur-[2px] transition-all delay-0 duration-500"
         >
             <div
                 id={title + "-button-container"}
@@ -28,7 +28,7 @@ export default function Project({ title }) {
                 className="absolute bottom-0 left-0 right-0
                 bg-zinc-500
                 h-40 group-focus:h-11 sm:group-focus:h-40
-                opacity-100 group-focus:opacity-80 
+                opacity-100
                 transition-all duration-700 delay-100 sm:delay-0
                 p-2"
             >
