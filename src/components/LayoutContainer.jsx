@@ -4,7 +4,7 @@ import ScrollToTop from "../scrollToTop";
 export default function LayoutContainer() {
     return (
         <>
-            <ScrollToTop />
+            {<ScrollToTop />}
             <Outlet />
         </>
     );

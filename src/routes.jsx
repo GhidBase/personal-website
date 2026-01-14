@@ -6,23 +6,24 @@ import ProjectPageFilemaker from "./components/ProjectPageFilemaker";
 
 export default [
     {
+        path: "/",
         element: <LayoutContainer />,
         children: [
             {
-                path: "*",
+                index: true,
                 element: <ProfilePage />,
             },
             {
-                path: "/ldg",
+                path: "ldg",
                 element: <ProjectPage title={"Lucky Defense Guides"} />,
             },
             {
-                path: "/DSA",
+                path: "dsa",
                 element: <ProjectPageDSA title={"Data Structures"} />,
             },
             {
-                path: "/filemaker",
-                element: <ProjectPageFilemaker title={"Filemaker"} />,
+                path: "filemaker",
+                element: <ProjectPageFilemaker title={"FileMaker"} />,
             },
         ],
     },

@@ -71,7 +71,9 @@ export default function ProjectPage({ title }) {
                         insertion, deletion, traversal, and indexing, focusing
                         on pointer manipulation and edge cases.{" "}
                         <a
-                            href="https://github.com/yourname/binary-search-tree"
+                            href="https://github.com/GhidBase/linked-lists-top"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sm text-zinc-400 hover:text-white"
                         >
                             View implementation →
@@ -86,7 +88,9 @@ export default function ProjectPage({ title }) {
                         collision handling, including resizing logic and
                         average-case time complexity analysis.{" "}
                         <a
-                            href="https://github.com/yourname/binary-search-tree"
+                            href="https://github.com/GhidBase/hash-map-top"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sm text-zinc-400 hover:text-white"
                         >
                             View implementation →
@@ -101,7 +105,9 @@ export default function ProjectPage({ title }) {
                         insertion, deletion, traversal, and lookup operations,
                         emphasizing recursive reasoning and tree invariants.{" "}
                         <a
-                            href="https://github.com/yourname/binary-search-tree"
+                            href="https://github.com/GhidBase/binary-search-tree"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sm text-zinc-400 hover:text-white"
                         >
                             View implementation →

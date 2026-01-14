@@ -79,10 +79,18 @@ export default function Header({
                     className="flex justify-center md:absolute right-9 bottom-6
                     gap-12 h-12 mt-2"
                 >
-                    <a href="">
+                    <a
+                        href="https://github.com/GhidBase?tab=overview&from=2025-12-01&to=2025-12-31"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <img src={github} className="h-full" alt="" />
                     </a>
-                    <a href="">
+                    <a
+                        href="https://www.linkedin.com/in/dylan-simon-a5b324317/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <img src={linkedIn} className="h-full" alt="" />
                     </a>
                 </div>

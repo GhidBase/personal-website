@@ -36,6 +36,53 @@ export default function ProjectPage({ title }) {
                     long-term growth.
                 </p>
 
+                <div className="mt-8 flex justify-center gap-4">
+                    <a
+                        href="https://luckydefenseguides.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                            px-5 py-2 rounded-md
+                            bg-white/5
+                            border border-white/20
+                            text-white/90 text-sm
+                            hover:bg-white/15
+                            transition-all"
+                    >
+                        Live Site ↗
+                    </a>
+
+                    <a
+                        href="https://github.com/GhidBase/guide-site-backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                            px-5 py-2 rounded-md
+                            bg-white/5
+                            border border-white/20
+                            text-white/90 text-sm
+                            hover:bg-white/15
+                            transition-all"
+                    >
+                        Backend Repo ↗
+                    </a>
+
+                    <a
+                        href="https://github.com/GhidBase/guide-site-frontend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                            px-5 py-2 rounded-md
+                            bg-white/5
+                            border border-white/20
+                            text-white/90 text-sm
+                            hover:bg-white/15
+                            transition-all"
+                    >
+                        Frontend Repo ↗
+                    </a>
+                </div>
+
                 <div className="mt-12 mb-16 h-px w-24 mx-auto bg-zinc-700" />
 
                 <div

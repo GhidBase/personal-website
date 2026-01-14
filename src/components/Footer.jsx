@@ -11,17 +11,13 @@ export default function Footer({
     maxSpacerClassName,
     leftHeaderClassName,
     imgClassName,
-    linkClassName
+    linkClassName,
 }) {
     return (
         <footer className={className + " md:height"}>
-            <div
-                className={maxSpacerClassName}
-            >
+            <div className={maxSpacerClassName}>
                 <div id="footer-left" className={leftClassName}>
-                    <h1 className={leftHeaderClassName}>
-                        Contact Me
-                    </h1>
+                    <h1 className={leftHeaderClassName}>Contact Me</h1>
                     <p className="">
                         I'm always happy to talk with recruiters and teams
                         looking for a practical, detail-oriented developer.
@@ -30,15 +26,12 @@ export default function Footer({
                         Feel free to reach out if you'd like to discuss
                         opportunities or learn more about my work.
                     </p>
-                    <a
-                        href=""
-                        className={linkClassName}
-                    >
+                    <a href="tel:+7752931579" className={linkClassName}>
                         <img src={phone} className="h-6 text-white" alt="" />
                         775-293-1579
                     </a>
                     <a
-                        href=""
+                        href="mailto:youremail@example.com?subject=Portfolio%20Inquiry"
                         className={linkClassName}
                     >
                         <img src={email} className="h-6 text-white" alt="" />
@@ -46,11 +39,7 @@ export default function Footer({
                     </a>
                 </div>
                 <div className={rightClassName + " md:" + height}>
-                    <img
-                        src={setup}
-                        alt=""
-                        className={imgClassName}
-                    />
+                    <img src={setup} alt="" className={imgClassName} />
                 </div>
             </div>
         </footer>
