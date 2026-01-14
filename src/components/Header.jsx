@@ -17,7 +17,8 @@ export default function Header({
                     py-8 md:py-15 2xl:px-40
                     flex flex-col md:block 2xl:flex 2xl:flex-row
                     2xl:items-center
-                    px-10 xl:px-0
+                    px-10 md:px-18 xl:px-0
+                    transition-all duration-500
                     "
         >
             <div
@@ -61,7 +62,7 @@ export default function Header({
                     m-0 2xl:m-0
                     mt-5 md:mt-40
                     md:my-20
-                    py-5 px-6
+                    py-5 md:px-6
                     flex-1
                     wrap-break-word
                     transition-all duration-500
