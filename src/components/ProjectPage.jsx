@@ -1,11 +1,24 @@
 import ldg from "../assets/ldg-2.png";
 import ldg2 from "../assets/ldg-3.png";
 import { Fragment } from "react";
+import { Link } from "react-router";
 
 export default function ProjectPage({ title }) {
     return (
-        <div className="p-10 pt-24">
-            <section className="max-w-4xl mx-auto">
+        <div className="p-10">
+            <Link
+                to="/"
+                className="
+                    inline-block
+                    mb-6
+                    text-sm
+                    text-zinc-400
+                    hover:text-white
+                    transition-colors"
+            >
+                ← Back to portfolio
+            </Link>
+            <section className="max-w-4xl mx-auto pt-18">
                 <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-center mb-6">
                     {title}
                 </h1>
@@ -93,6 +106,43 @@ export default function ProjectPage({ title }) {
                     </li>
                 </ul>
             </section>
+            <section className="mt-20 max-w-3xl mx-auto">
+                <h2 className="text-2xl font-semibold mb-6">
+                    Key Technical Decisions
+                </h2>
+
+                <ul className="space-y-4 text-zinc-300 leading-relaxed">
+                    <li>
+                        <span className="font-medium text-zinc-200">
+                            Custom CMS:
+                        </span>{" "}
+                        Built to enable in-site content editing, matching the
+                        workflow of professional publishing platforms and
+                        avoiding reliance on external services.
+                    </li>
+
+                    <li>
+                        <span className="font-medium text-zinc-200">
+                            Custom API:
+                        </span>{" "}
+                        Designed the API with scalability in mind, allowing the
+                        platform to expand beyond a single game and support
+                        multiple content domains.
+                    </li>
+                </ul>
+            </section>
+            <div className="mt-24 text-center">
+                <Link
+                    to="/"
+                    className="
+                        text-sm
+                        text-zinc-400
+                        hover:text-white
+                        transition-colors"
+                >
+                    ← Back to portfolio
+                </Link>
+            </div>
         </div>
     );
 }

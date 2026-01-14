@@ -6,9 +6,13 @@ import "./css/animations.css";
 import ProfilePage from "./components/ProfilePage";
 import ProjectPage from "./components/ProjectPage";
 import ProjectPageTest from "./components/ProjectPageTest";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import routes from "./routes";
+
+const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <ProjectPage title={"Lucky Defense Guides"} />
+        <RouterProvider router={router}></RouterProvider>
     </StrictMode>,
 );

@@ -1,4 +1,4 @@
-
+import { Link } from "react-router";
 export default function Project({ title, description, imgSrc }) {
     return (
         <div
@@ -26,7 +26,8 @@ export default function Project({ title, description, imgSrc }) {
 "
             />
 
-            <a
+            <Link
+                to="/ldg"
                 className="
                     absolute inset-0 flex items-center justify-center
                     scale-150 md:scale-200
@@ -49,7 +50,7 @@ export default function Project({ title, description, imgSrc }) {
                 >
                     Details →
                 </span>
-            </a>
+            </Link>
 
             <div
                 id={"p-" + title + "-detail-container"}
