@@ -3,6 +3,7 @@ import ldg2 from "../assets/ldg-3.png";
 import { Fragment } from "react";
 import { Link } from "react-router";
 import { useViewTransitionNavigate } from "../transitionFunction";
+import cmsGif from "../assets/ldg-vid.gif";
 
 export default function ProjectPage({ title }) {
     const navigate = useViewTransitionNavigate();
@@ -31,26 +32,28 @@ export default function ProjectPage({ title }) {
                         700,000+ views
                     </span>
                     , built from scratch. Custom CMS, React, PostgreSQL +
-                    Prisma, and an API designed for real traffic and long-term
-                    growth.
+                    Prisma, Amazon S3, and an API designed for real traffic and
+                    long-term growth.
                 </p>
 
                 <div className="mt-12 mb-16 h-px w-24 mx-auto bg-zinc-700" />
 
                 <div
                     id={title + "image"}
-                    className="relative h-48 md:h-64 w-full max-w-3xl mx-auto"
+                    className="relative h-64 md:h-64 w-full max-w-3xl mx-auto"
                 >
-                    <div
+                    <img
+                        src={cmsGif}
+                        alt="Custom CMS editing workflow"
                         className="
-                            w-full h-full
-                            bg-cover bg-top
-                            rounded-xl
-                            border border-zinc-700
-                            shadow-lg
-                            transition-transform duration-500
-                            hover:scale-[1.01]"
-                        style={{ backgroundImage: `url(${ldg2})` }}
+                                rounded-lg
+                                border border-zinc-700
+                                max-w-full
+                                h-full
+                                w-full
+                                object-top
+                                object-cover
+                                shadow-sm"
                     />
                 </div>
 

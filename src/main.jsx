@@ -5,7 +5,6 @@ import "./index.css";
 import "./css/animations.css";
 import ProfilePage from "./components/ProfilePage";
 import ProjectPage from "./components/ProjectPage";
-import ProjectPageTest from "./components/ProjectPageTest";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import routes from "./routes";
 
