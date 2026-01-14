@@ -100,7 +100,7 @@ createRoot(document.getElementById("root")).render(
                 w-full
                 md:max-w-260 2xl:max-w-none
                 px-18 xl:px-0 2xl:px-40
-                pb-20"
+                lg:pb-20"
             maxSpacerClassName="flex items-center md:gap-8"
             leftHeaderClassName="text-center text-3xl md:text-6xl md:text-left"
             leftClassName="
