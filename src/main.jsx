@@ -68,7 +68,7 @@ createRoot(document.getElementById("root")).render(
         <Header
             aboutMe={aboutMe}
             aboutMeClassName="
-              text-justify md:text-left
+              text-center md:text-left
               text-xl md:text-xl xl:text-2xl"
             aboutMeHeaderClassName="font-semibold text-5xl text-center md:text-left md:mt-5"
         ></Header>
