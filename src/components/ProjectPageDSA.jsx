@@ -10,7 +10,7 @@ export default function ProjectPage({ title }) {
     return (
         <div className="p-10 fade-in-two">
             <div
-                onClick={() => navigate("/")}
+                onClick={() => navigate("/projects/lucky-defense")}
                 className="
                     inline-block
                     mb-6
@@ -40,20 +40,18 @@ export default function ProjectPage({ title }) {
 
                 <div
                     id={title + "image"}
-                    className="relative h-64 md:h-64 w-full max-w-3xl mx-auto"
+                    className="relative h-48 md:h-64 w-full max-w-3xl mx-auto"
                 >
-                    <img
-                        src={cmsGif}
-                        alt="Custom CMS editing workflow"
+                    <div
                         className="
-                                rounded-lg
-                                border border-zinc-700
-                                max-w-full
-                                h-full
-                                w-full
-                                object-top
-                                object-cover
-                                shadow-sm"
+                                            w-full h-full
+                                            bg-cover bg-top
+                                            rounded-xl
+                                            border border-zinc-700
+                                            shadow-lg
+                                            transition-transform duration-500
+                                            hover:scale-[1.01]"
+                        style={{ backgroundImage: `url(${ldg2})` }}
                     />
                 </div>
 

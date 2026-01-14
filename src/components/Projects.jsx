@@ -8,6 +8,7 @@ export default function Projects({ projects, className }) {
                     title={project.title}
                     description={project.description}
                     imgSrc={project.imgSrc}
+                    slug={project.slug}
                 ></Project>
             ))}
         </div>

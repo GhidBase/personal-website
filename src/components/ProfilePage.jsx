@@ -37,6 +37,7 @@ const projects = [
             </Fragment>
         ),
         imgSrc: ldg,
+        slug: "/ldg",
     },
     {
         id: 1,
@@ -47,6 +48,7 @@ const projects = [
             </Fragment>
         ),
         imgSrc: bst,
+        slug: "/dsa",
     },
     {
         id: 2,

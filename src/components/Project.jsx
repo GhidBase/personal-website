@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { useViewTransitionNavigate } from "../transitionFunction";
 
-export default function Project({ title, description, imgSrc }) {
+export default function Project({ title, description, imgSrc, slug }) {
     const navigate = useViewTransitionNavigate();
     return (
         <div
@@ -30,7 +30,7 @@ export default function Project({ title, description, imgSrc }) {
             />
 
             <div
-                onClick={() => navigate("/ldg")}
+                onClick={() => navigate(slug)}
                 className="
                     absolute inset-0 flex items-center justify-center
                     scale-150 md:scale-200
