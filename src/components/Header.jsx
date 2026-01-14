@@ -13,11 +13,11 @@ export default function Header({
             className="
                     md:mx-auto
                     w-full 2xl:w-full
-                    md:max-w-300 2xl:max-w-none
+                    md:max-w-260 2xl:max-w-none
                     py-8 md:py-15 2xl:px-40
                     flex flex-col md:block 2xl:flex 2xl:flex-row
                     2xl:items-center
-                    px-6 xl:px-0
+                    px-18 xl:px-0
                     "
         >
             <div
@@ -39,7 +39,7 @@ export default function Header({
                             w-full h-full object-cover
                             shadow-lg/40
                             fade-in-two
-                            -translate-x-10
+                            -translate-x-10 2xl:translate-x-0
 "
                     alt=""
                 />
@@ -54,7 +54,7 @@ export default function Header({
                 id="h-text"
                 className="
                     fade-in-two
-                    md:max-w-300 2xl:max-w-none
+                    md:max-w-260 2xl:max-w-none
                     bg-none md:bg-zinc-800 text-neutral-200
                     md:shadow-lg/40
                     md:h-135 lg:h-115 2xl:h-145

@@ -74,8 +74,8 @@ createRoot(document.getElementById("root")).render(
         ></Header>
         <h1 className="
             text-left w-full text-5xl md:text-6xl mt-5 fade-in-two
-            md:max-w-300 2xl:max-w-none
-            px-6 xl:px-0 2xl:px-40">
+            md:max-w-260 2xl:max-w-none
+            px-18 xl:px-0 2xl:px-40">
             My Work
         </h1>
         <br />
@@ -87,9 +87,9 @@ createRoot(document.getElementById("root")).render(
                 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]
                 auto-rows-[350px] xl:auto-rows-[430px]
                 justify-center
-                md:max-w-300 2xl:max-w-none
+                md:max-w-260 2xl:max-w-none
                 w-full 2xl:px-40
-                px-6 md:mx-20 xl:px-0
+                px-18 md:mx-20 xl:px-0
                 pb-20
                 gap-10
                 fade-in-two`}
@@ -98,8 +98,8 @@ createRoot(document.getElementById("root")).render(
             height="h-125"
             className="
                 w-full
-                md:max-w-300 2xl:max-w-none
-                px-6 xl:px-0 2xl:px-40
+                md:max-w-260 2xl:max-w-none
+                px-18 xl:px-0 2xl:px-40
                 pb-20"
             maxSpacerClassName="flex items-center md:gap-8"
             leftHeaderClassName="text-center text-3xl md:text-6xl md:text-left"
