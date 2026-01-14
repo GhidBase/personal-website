@@ -8,7 +8,7 @@ import cmsGif from "../assets/ldg-vid.gif";
 export default function ProjectPage({ title }) {
     const navigate = useViewTransitionNavigate();
     return (
-        <div className="p-10 fade-in-two">
+        <div className="p-10 pt-6 fade-in-two">
             <div
                 onClick={() => navigate("/")}
                 className="
@@ -36,16 +36,19 @@ export default function ProjectPage({ title }) {
                     long-term growth.
                 </p>
 
-                <div className="mt-8 flex justify-center gap-4">
+                <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
                     <a
                         href="https://luckydefenseguides.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
-                            px-5 py-2 rounded-md
+                            w-full sm:w-auto
+                            px-6 py-3 sm:py-2
+                            rounded-md
                             bg-white/5
                             border border-white/20
                             text-white/90 text-sm
+                            text-center
                             hover:bg-white/15
                             transition-all"
                     >
@@ -57,10 +60,13 @@ export default function ProjectPage({ title }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
-                            px-5 py-2 rounded-md
+                            w-full sm:w-auto
+                            px-6 py-3 sm:py-2
+                            rounded-md
                             bg-white/5
                             border border-white/20
                             text-white/90 text-sm
+                            text-center
                             hover:bg-white/15
                             transition-all"
                     >
@@ -72,10 +78,13 @@ export default function ProjectPage({ title }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
-                            px-5 py-2 rounded-md
+                            w-full sm:w-auto
+                            px-6 py-3 sm:py-2
+                            rounded-md
                             bg-white/5
                             border border-white/20
                             text-white/90 text-sm
+                            text-center
                             hover:bg-white/15
                             transition-all"
                     >

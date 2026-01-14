@@ -22,8 +22,9 @@ export default function Project({ title, description, imgSrc, slug }) {
                 className="
                 
                 w-full h-full object-cover
-                transition-all duration-500
-                group-focus:blur-[2px] md:group-focus:blur-none md:group-hover:blur-[2px]!
+                duration-500
+                
+                transition-all blur-none group-focus:blur-[2px] md:group-focus:blur-none group-hover:blur-[2px]!
                 md:group-hover:opacity-80
                 will-change-transform
 "
@@ -47,6 +48,7 @@ export default function Project({ title, description, imgSrc, slug }) {
                         opacity-60 backdrop-blur-md
                         border border-white/30
                         text-white font-medium tracking-wide
+                        
                         hover:opacity-100!
                         transition-all duration-200
     "
@@ -60,7 +62,7 @@ export default function Project({ title, description, imgSrc, slug }) {
                 className="absolute bottom-0 left-0 right-0
                 bg-zinc-500
                 h-40
-                opacity-100 duration-700 delay-100 md:delay-0
+                opacity-100 duration-700 md:delay-0
                 group-focus:delay-0 group-focus:duration-00
                 p-2 md:p-4
                 transition-all blur-none group-focus:blur-[2px] md:group-focus:blur-none group-hover:blur-[2px]!
