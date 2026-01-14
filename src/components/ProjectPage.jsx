@@ -99,6 +99,15 @@ export default function ProjectPage({ title }) {
                             Custom CMS with integrated TinyMCE editor
                         </p>
                     </li>
+                    
+                    <li>
+                        <p className="text-xs uppercase tracking-wide text-zinc-500 mb-1">
+                            Storage
+                        </p>
+                        <p className="text-zinc-200">
+                            Amazon S3 (media uploads and asset storage)
+                        </p>
+                    </li>
 
                     <li>
                         <p className="text-xs uppercase tracking-wide text-zinc-500 mb-1">
