@@ -33,14 +33,12 @@ export default function ProjectPageFilemaker({ title, imgSrc }) {
                     real operational environments.
                 </p>
 
-                <br />
-
-                <p className="text-zinc-300 text-lg leading-relaxed max-w-2xl mx-auto text-center">
+                <p className="mt-6 text-zinc-300 text-lg leading-relaxed max-w-2xl mx-auto text-center">
                     Due to the proprietary nature of the systems I worked on,
                     the video below demonstrates a representative FileMaker
-                    solution built to showcase layout customization and workflow
-                    logic.
+                    solution showcasing layout customization and workflow logic.
                 </p>
+
                 <div className="mt-8 mb-12 h-px w-24 mx-auto bg-zinc-700" />
 
                 <div
@@ -86,9 +84,8 @@ export default function ProjectPageFilemaker({ title, imgSrc }) {
                     </li>
 
                     <li className="text-zinc-400">
-                        Due to the proprietary nature of these systems, this
-                        page presents a simplified representative example rather
-                        than production data.
+                        Examples shown are simplified representations due to the
+                        proprietary nature of production systems.
                     </li>
                 </ul>
             </section>
