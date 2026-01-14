@@ -10,7 +10,8 @@ export default function Footer({
     height,
     maxSpacerClassName,
     leftHeaderClassName,
-    imgClassName
+    imgClassName,
+    linkClassName
 }) {
     return (
         <footer className={className + " md:height"}>
@@ -31,14 +32,14 @@ export default function Footer({
                     </p>
                     <a
                         href=""
-                        className="flex items-center self-center gap-2 md:self-start"
+                        className={linkClassName}
                     >
                         <img src={phone} className="h-6 text-white" alt="" />
                         775-293-1579
                     </a>
                     <a
                         href=""
-                        className="flex items-center self-center gap-2 md:self-start"
+                        className={linkClassName}
                     >
                         <img src={email} className="h-6 text-white" alt="" />
                         grvdylans@gmail.com

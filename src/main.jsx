@@ -104,18 +104,22 @@ createRoot(document.getElementById("root")).render(
                 px-10 md:px-18 lg:px-18 xl:px-0 2xl:px-40
                 pb-10 lg:pb-20"
             maxSpacerClassName="flex items-center md:gap-8"
-            leftHeaderClassName="text-center text-3xl md:text-6xl md:text-left"
+            // Removed md:text-left
+            leftHeaderClassName="text-center text-3xl md:text-6xl"
             leftClassName="
                 flex-5
                 flex flex-col
+                text-center
                 gap-6
                 xl:text-lg 2xl:text-xl
                 "
+            // I removed md:flex
             rightClassName="
-                hidden md:flex
+                hidden
                 md:flex-3 lg:flex-5 items-center"
             imgClassName="
                 object-cover md:h-75 lg:h-full max-h-125 w-full"
+            linkClassName="flex items-center self-center gap-2"
         ></Footer>
     </StrictMode>,
 );
