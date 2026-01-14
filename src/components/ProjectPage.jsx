@@ -2,12 +2,14 @@ import ldg from "../assets/ldg-2.png";
 import ldg2 from "../assets/ldg-3.png";
 import { Fragment } from "react";
 import { Link } from "react-router";
+import { useViewTransitionNavigate } from "../transitionFunction";
 
 export default function ProjectPage({ title }) {
+    const navigate = useViewTransitionNavigate();
     return (
-        <div className="p-10">
-            <Link
-                to="/"
+        <div className="p-10 fade-in-two">
+            <div
+                onClick={() => navigate("/projects/lucky-defense")}
                 className="
                     inline-block
                     mb-6
@@ -17,7 +19,7 @@ export default function ProjectPage({ title }) {
                     transition-colors"
             >
                 ← Back to portfolio
-            </Link>
+            </div>
             <section className="max-w-4xl mx-auto pt-18">
                 <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-center mb-6">
                     {title}

@@ -15,6 +15,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 300ms;
+  animation-timing-function: ease;
+}
+
+
 #root {
   width: 100%;
   display: flex;

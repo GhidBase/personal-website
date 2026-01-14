@@ -1,5 +1,8 @@
 import { Link } from "react-router";
+import { useViewTransitionNavigate } from "../transitionFunction";
+
 export default function Project({ title, description, imgSrc }) {
+    const navigate = useViewTransitionNavigate();
     return (
         <div
             id={"project-" + title}
@@ -26,8 +29,8 @@ export default function Project({ title, description, imgSrc }) {
 "
             />
 
-            <Link
-                to="/ldg"
+            <div
+                onClick={() => navigate("/ldg")}
                 className="
                     absolute inset-0 flex items-center justify-center
                     scale-150 md:scale-200
@@ -50,7 +53,7 @@ export default function Project({ title, description, imgSrc }) {
                 >
                     Details →
                 </span>
-            </Link>
+            </div>
 
             <div
                 id={"p-" + title + "-detail-container"}
