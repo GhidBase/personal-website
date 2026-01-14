@@ -17,7 +17,7 @@ export default function Header({
                     py-8 md:py-15 2xl:px-40
                     flex flex-col md:block 2xl:flex 2xl:flex-row
                     2xl:items-center
-                    px-18 xl:px-0
+                    px-10 xl:px-0
                     "
         >
             <div
@@ -39,7 +39,7 @@ export default function Header({
                             w-full h-full object-cover
                             shadow-lg/40
                             fade-in-two
-                            -translate-x-10 2xl:translate-x-0
+                            md:-translate-x-10 2xl:translate-x-0
 "
                     alt=""
                 />
