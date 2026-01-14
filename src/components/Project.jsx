@@ -57,7 +57,7 @@ export default function Project({ title, description, imgSrc }) {
                 bg-zinc-500
                 h-40 group-focus:h-11 md:group-focus:h-40
                 opacity-100 
-                transition-all duration-700 delay-100 md:delay-0
+                transition-transform duration-700 delay-100 md:delay-0
                 group-focus:delay-0 group-focus:duration-400 
                 p-2 md:p-4
                 group-focus:blur-[2px] md:group-focus:blur-none md:group-hover:blur-[2px]!"

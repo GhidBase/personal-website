@@ -33,7 +33,7 @@ const projects = [
         title: "Lucky Defense Guides",
         description: (
             <Fragment>
-                <p className="will-change-transform text-sm md:text-md xl:text-lg">
+                <p className="will-change-transform text-sm md:text-md">
                     700k views, active users, a custom CMS, server, PostgreSQL,
                     Prisma, and good Google presence.
                 </p>
@@ -72,10 +72,11 @@ createRoot(document.getElementById("root")).render(
               text-xl md:text-xl xl:text-2xl"
             aboutMeHeaderClassName=" font-semibold text-5xl text-center md:text-left md:mt-5"
         ></Header>
-        <br />
-        <br />
-        <h1 className="text-center text-5xl md:text-8xl mt-5 md:mb-4 fade-in-two">
-            Projects
+        <h1 className="
+            text-left w-full text-5xl md:text-6xl mt-5 fade-in-two
+            md:max-w-300 2xl:max-w-none
+            px-6 xl:px-0 2xl:px-40">
+            My Work
         </h1>
         <br />
         <br />
@@ -83,18 +84,36 @@ createRoot(document.getElementById("root")).render(
             projects={projects}
             className={`
                 grid
-                grid-cols-[repeat(auto-fit,minmax(250px,1fr))]
+                grid-cols-[repeat(auto-fit,minmax(280px,1fr))]
                 auto-rows-[350px] xl:auto-rows-[430px]
                 justify-center
-                w-full max-w-300
-                px-6 xl:px-0 lg:mx-auto
+                md:max-w-300 2xl:max-w-none
+                w-full 2xl:px-40
+                px-6 md:mx-20 xl:px-0
                 pb-20
                 gap-10
                 fade-in-two`}
         ></Projects>
         <Footer
-            className="md:flex md:gap-16 bg-white/20 md:h-150 flex-1 justify-center items-center md:px-10 lg:px-20 md:py-20 fade-in-two"
-            leftClassName="p-6 pt-2 md:p-0! h-100 md:pr-6 flex flex-col gap-6 md:text-md xl:text-lg 2xl:text-xl justify-center"
+            height="h-125"
+            className="
+                w-full
+                md:max-w-300 2xl:max-w-none
+                px-6 xl:px-0 2xl:px-40
+                pb-20"
+            maxSpacerClassName="flex items-center md:gap-8"
+            leftHeaderClassName="text-center text-3xl md:text-6xl md:text-left"
+            leftClassName="
+                flex-5
+                flex flex-col
+                gap-6
+                xl:text-lg 2xl:text-xl
+                "
+            rightClassName="
+                hidden md:flex
+                md:flex-3 lg:flex-5 items-center"
+            imgClassName="
+                object-cover md:h-75 lg:h-full max-h-125 w-full"
         ></Footer>
     </StrictMode>,
 );

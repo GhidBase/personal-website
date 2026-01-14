@@ -17,12 +17,13 @@ export default function Header({
                     py-8 md:py-15 2xl:px-40
                     flex flex-col md:block 2xl:flex 2xl:flex-row
                     2xl:items-center
+                    px-6 xl:px-0
                     "
         >
             <div
                 className="
                         fade-in-two
-                        px-8 2xl:p-0
+                        -mr-2 md:pb-4 2xl:p-0
                         h-100 sm:max-w-120 md:h-80 lg:h-100 2xl:h-150 2xl:max-w-none
                         self-center
                         md:float-left
@@ -37,7 +38,9 @@ export default function Header({
                     className="
                             w-full h-full object-cover
                             shadow-lg/40
-                            fade-in-two"
+                            fade-in-two
+                            -translate-x-10
+"
                     alt=""
                 />
                 <h2 className="absolute top-15 -right-80 text-7xl text-shadow-lg/80 z-1 hidden md:block 2xl:hidden">
@@ -51,17 +54,20 @@ export default function Header({
                 id="h-text"
                 className="
                     fade-in-two
+                    md:max-w-300 2xl:max-w-none
                     bg-none md:bg-zinc-800 text-neutral-200
                     md:shadow-lg/40
                     md:h-135 lg:h-115 2xl:h-145
-                    m-0 mt-5 2xl:m-0
-                    md:my-20 md:mx-20 md:mt-40
+                    m-0 2xl:m-0
+                    mt-5 md:mt-40
+                    md:my-20
                     py-5 px-6
                     flex-1
                     wrap-break-word
                     transition-all duration-500
                     font-[roboto]
                     relative
+                    mb-0!
                     "
             >
                 <h1 className={aboutMeHeaderClassName}>About Me</h1>
