@@ -7,7 +7,7 @@ export default function Project({ title, description, imgSrc }) {
             className="bg-zinc-700
                 relative group
                 overflow-hidden
-                scale-100 md:hover:scale-102 
+                scale-100 md:hover:scale-102! focus:scale-102 md:focus:scale-100
                 transition-all delay-0 duration-500
                 will-change-transform
                 shadow-lg/80
@@ -55,12 +55,12 @@ export default function Project({ title, description, imgSrc }) {
                 id={"p-" + title + "-detail-container"}
                 className="absolute bottom-0 left-0 right-0
                 bg-zinc-500
-                h-40 group-focus:h-11 md:group-focus:h-40
-                opacity-100 
-                transition-transform duration-700 delay-100 md:delay-0
-                group-focus:delay-0 group-focus:duration-400 
+                h-40
+                opacity-100 duration-700 delay-100 md:delay-0
+                group-focus:delay-0 group-focus:duration-00
                 p-2 md:p-4
-                group-focus:blur-[2px] md:group-focus:blur-none md:group-hover:blur-[2px]!"
+                transition-all blur-none group-focus:blur-[2px] md:group-focus:blur-none group-hover:blur-[2px]!
+                "
             >
                 <h1
                     id={"p-" + title + "-title"}
@@ -70,7 +70,7 @@ export default function Project({ title, description, imgSrc }) {
                 </h1>
                 <div
                     id={"p-" + title + "-details"}
-                    className="min-h-0 group-focus:opacity-0 md:group-focus:opacity-100 transition-all overflow-hidden duration-500 will-change-transform"
+                    className="min-h-0 transition-all overflow-hidden duration-500 will-change-transform"
                 >
                     {description}
                 </div>
