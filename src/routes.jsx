@@ -17,7 +17,7 @@ export default [
             },
             {
                 path: "/DSA",
-                element: <ProjectPageDSA title={"DSA"} />,
+                element: <ProjectPageDSA title={"Data Structures"} />,
             },
         ],
     },

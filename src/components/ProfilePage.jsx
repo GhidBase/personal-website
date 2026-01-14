@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import ldg from "../assets/ldg-2.png";
 import bst from "../assets/BST.webp";
+import filemaker from "../assets/filemaker.avif"
 
 const aboutMe = (
     <Fragment>
@@ -31,8 +32,9 @@ const projects = [
         description: (
             <Fragment>
                 <p className="will-change-transform text-sm md:text-md">
-                    700k views, active users, a custom CMS, server, PostgreSQL,
-                    Prisma, and good Google presence.
+                    A production full-stack platform with 700,000+ views,
+                    powered by a custom CMS, PostgreSQL + Prisma, and a bespoke
+                    API.
                 </p>
             </Fragment>
         ),
@@ -44,7 +46,11 @@ const projects = [
         title: "Data Structures Projects",
         description: (
             <Fragment>
-                <p>BST, Linked Lists, Hashmaps</p>
+                <p className="will-change-transform text-sm md:text-md">
+                    Core data structures implemented from scratch, including
+                    linked lists, hash maps, and binary search trees, with a
+                    focus on correctness and performance.
+                </p>
             </Fragment>
         ),
         imgSrc: bst,
@@ -52,13 +58,13 @@ const projects = [
     },
     {
         id: 2,
-        title: "Data Structures Projects",
+        title: "Professional FileMaker Development",
         description: (
             <Fragment>
                 <p>BST, Linked Lists, Hashmaps</p>
             </Fragment>
         ),
-        imgSrc: bst,
+        imgSrc: filemaker,
     },
 ];
 
