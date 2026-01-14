@@ -40,7 +40,7 @@ export default function ProjectPage({ title }) {
 
                 <div
                     id={title + "image"}
-                    className="relative h-64 md:h-64 w-full max-w-3xl mx-auto"
+                    className="relative h-64 sm:h-100 md:h-130 w-full max-w-3xl mx-auto"
                 >
                     <img
                         src={cmsGif}

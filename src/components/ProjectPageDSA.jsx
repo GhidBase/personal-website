@@ -9,7 +9,7 @@ export default function ProjectPage({ title }) {
     return (
         <div className="p-10 fade-in-two">
             <div
-                onClick={() => navigate("/projects/lucky-defense")}
+                onClick={() => navigate("/")}
                 className="
                     inline-block
                     mb-6

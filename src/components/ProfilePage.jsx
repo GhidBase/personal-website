@@ -5,7 +5,7 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import ldg from "../assets/ldg-2.png";
 import bst from "../assets/BST.webp";
-import filemaker from "../assets/filemaker.avif"
+import filemaker from "../assets/filemaker.avif";
 
 const aboutMe = (
     <Fragment>
@@ -58,13 +58,17 @@ const projects = [
     },
     {
         id: 2,
-        title: "Professional FileMaker Development",
+        title: "FileMaker Development",
         description: (
             <Fragment>
-                <p>BST, Linked Lists, Hashmaps</p>
+                <p className="will-change-transform text-sm md:text-md">
+                    Professional FileMaker development for real-world business
+                    workflows and database-driven applications.
+                </p>
             </Fragment>
         ),
         imgSrc: filemaker,
+        slug: "/filemaker",
     },
 ];
 
