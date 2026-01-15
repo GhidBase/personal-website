@@ -42,7 +42,7 @@ export default function Header({
                     className={`
                             w-full h-full object-cover
                             shadow-lg/40
-                            ${portraitLoaded ? "opacity-100!" : "opacity-0!"}
+                            ${portraitLoaded ? "fade-in-two" : "opacity-0!"}
                             transition-opacity duration-500
                             md:-translate-x-10 2xl:translate-x-0`}
                     alt=""
