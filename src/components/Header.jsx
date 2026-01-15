@@ -2,11 +2,13 @@ import portrait from "../assets/portrait.jpg";
 import email from "../assets/email.svg";
 import linkedIn from "../assets/linkedIn3.svg";
 import github from "../assets/github.svg";
+import { useState } from "react";
 export default function Header({
     aboutMe,
     aboutMeClassName,
     aboutMeHeaderClassName,
 }) {
+    const [portraitLoaded, setPortraitLoaded] = useState(false);
     return (
         <div
             id="header"
@@ -36,12 +38,13 @@ export default function Header({
                 <img
                     id="h-portrait"
                     src={portrait}
-                    className="
+                    onLoad={() => setPortraitLoaded(true)}
+                    className={`
                             w-full h-full object-cover
                             shadow-lg/40
-                            fade-in-two
-                            md:-translate-x-10 2xl:translate-x-0
-"
+                            ${portraitLoaded ? "opacity-100!" : "opacity-0!"}
+                            transition-opacity duration-500
+                            md:-translate-x-10 2xl:translate-x-0`}
                     alt=""
                 />
                 <h2 className="absolute top-15 -right-80 text-7xl text-shadow-lg/80 z-1 hidden md:block 2xl:hidden">

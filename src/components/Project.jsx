@@ -10,7 +10,7 @@ export default function Project({ title, description, imgSrc, slug }) {
             className="bg-zinc-700
                 relative group
                 overflow-hidden
-                scale-100 md:hover:scale-102!
+                scale-100 hover:scale-102!
                 transition-all delay-0 duration-500
                 will-change-transform
                 shadow-lg/80
