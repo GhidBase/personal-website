@@ -20,6 +20,7 @@ export default function Project({ title, description, imgSrc, slug }) {
                 id={title + "detail-button"}
                 onClick={() => navigate(slug)}
                 className="
+                        pointer-events-none group-hover:pointer-events-auto
                         absolute inset-0 flex items-center justify-center
                         scale-150 md:scale-200
                         opacity-0 md:group-hover:opacity-100! will-change-[opacity]
@@ -28,6 +29,7 @@ export default function Project({ title, description, imgSrc, slug }) {
                   "
             >
                 <span
+                    id={title + "-detail-button-span"}
                     className="
                             px-6 py-2
                             rounded-full
@@ -37,7 +39,7 @@ export default function Project({ title, description, imgSrc, slug }) {
                             text-white font-medium tracking-wide
                 
                             hover:opacity-100!
-                            transition-all duration-200
+                            transition-all duration-400
                     "
                 >
                     Details →
