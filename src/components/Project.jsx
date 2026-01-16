@@ -92,8 +92,10 @@ export default function Project({
                     className="
                     absolute bottom-0 left-0 right-0
                     bg-zinc-500
-                    h-45 md:h-55
+                    h-45 md:h-53 lg:h-47 xl:h-52 2xl:h-48
                     p-2 md:p-4
+                    transition-all
+                    duration-500
                     "
                 >
                     <div
