@@ -1,12 +1,9 @@
-import ldg from "../assets/ldg-2.png";
-import ldg2 from "../assets/ldg-3.png";
-import bst from "../assets/BST.webp";
 import { Link } from "react-router";
 import { useViewTransitionNavigate } from "../transitionFunction";
-import filemaker from "../assets/filemaker.avif";
 
-export default function ProjectPageFilemaker({ title, imgSrc }) {
+export default function ProjectPageFilemaker({ title }) {
     const navigate = useViewTransitionNavigate();
+
     return (
         <div className="p-10 fade-in-two">
             <div
@@ -28,31 +25,61 @@ export default function ProjectPageFilemaker({ title, imgSrc }) {
                 </h1>
 
                 <p className="text-zinc-300 text-lg leading-relaxed max-w-2xl mx-auto text-center">
-                    Professional FileMaker development focused on building and
-                    maintaining database-driven business applications used in
-                    real operational environments.
+                    Professional experience building and maintaining
+                    database-driven business applications used in real
+                    operational environments.
                 </p>
 
-                <p className="mt-6 text-zinc-300 text-lg leading-relaxed max-w-2xl mx-auto text-center">
-                    Due to the proprietary nature of the systems I worked on,
-                    the video below demonstrates a representative FileMaker
-                    solution showcasing layout customization and workflow logic.
-                </p>
+                {/* Credly validation block */}
+                <div className="mt-8 text-center">
+                    <p className="text-zinc-300 text-base">
+                        Vendor-certified in database-driven application
+                        development and automation platforms.
+                    </p>
 
-                <div className="mt-8 mb-12 h-px w-24 mx-auto bg-zinc-700" />
+                    <a
+                        href="https://www.credly.com/users/YOUR-CREDLY-USERNAME"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                            inline-block
+                            mt-2
+                            text-sm
+                            text-blue-400
+                            hover:text-blue-300
+                            transition-colors"
+                    >
+                        View full certification transcript (Credly)
+                    </a>
+                </div>
+
+                <div className="mt-10 mb-12 h-px w-24 mx-auto bg-zinc-700" />
+
+                {/* Video section (now clearly optional) */}
+                <p className="text-zinc-400 text-sm leading-relaxed max-w-2xl mx-auto text-center mb-4">
+                    Optional overview video demonstrating a representative
+                    FileMaker workflow. Production systems cannot be shown due
+                    to proprietary constraints.
+                </p>
 
                 <div
-                    id={title + "image"}
-                    className="relative h-64 sm:h-120 w-full max-w-2xl mx-auto"
+                    className="
+                        relative
+                        h-64 sm:h-120
+                        w-full
+                        max-w-2xl
+                        mx-auto
+                        opacity-90
+                    "
                 >
                     <iframe
-                        src="https://www.youtube.com/embed/e5IrGtKhHt4?si=7vTfE7JPaX5MEn5L"
-                        className="w-full h-full"
+                        src="https://www.youtube.com/embed/e5IrGtKhHt4"
+                        className="w-full h-full rounded-md"
                         title="FileMaker Example Workflow"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                    ></iframe>
+                    />
                 </div>
 
                 <p className="mt-4 text-xs text-zinc-500 text-center">
@@ -68,19 +95,18 @@ export default function ProjectPageFilemaker({ title, imgSrc }) {
 
                 <ul className="space-y-6 text-zinc-300 leading-relaxed">
                     <li>
-                        Designed and maintained relational FileMaker databases
-                        supporting day-to-day business operations for
-                        non-technical users.
+                        Designed and maintained relational databases supporting
+                        day-to-day business operations for non-technical users.
                     </li>
 
                     <li>
-                        Built custom layouts, scripts, and workflows to support
-                        data entry, reporting, and internal process automation.
+                        Built custom layouts, scripts, and workflows for data
+                        entry, reporting, and internal process automation.
                     </li>
 
                     <li>
-                        Worked within existing systems while extending and
-                        refactoring solutions to meet evolving business needs.
+                        Extended and refactored existing systems to meet evolving
+                        business requirements while preserving data integrity.
                     </li>
 
                     <li className="text-zinc-400">
