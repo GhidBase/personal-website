@@ -1,7 +1,18 @@
 import { Link } from "react-router";
 import { useViewTransitionNavigate } from "../transitionFunction";
+import postgre from "../assets/postgreSQL.svg";
+import postgre2 from "../assets/postgreSQL2.svg";
+import react from "../assets/react.svg";
+import node from "../assets/nodejslogo.svg";
+import prisma from "../assets/prisma.svg";
 
-export default function Project({ title, description, imgSrc, slug }) {
+export default function Project({
+    title,
+    description,
+    imgSrc,
+    slug,
+    stackImgs,
+}) {
     const navigate = useViewTransitionNavigate();
     return (
         <div
@@ -78,12 +89,28 @@ export default function Project({ title, description, imgSrc, slug }) {
 
                 <div
                     id={"p-" + title + "-detail-container"}
-                    className="absolute bottom-0 left-0 right-0
+                    className="
+                    absolute bottom-0 left-0 right-0
                     bg-zinc-500
-                    h-40
+                    h-45 md:h-55
                     p-2 md:p-4
                     "
                 >
+                    <div
+                        className="
+                            absolute
+                            bottom-3 md:bottom-5 md:px-3
+                            left-2 md:left-0 md:w-full md:right-0 md:max-w-60
+                            justify-around
+                            h-6 md:h-9
+                            gap-1 md:gap-6
+                            flex
+                            text-zinc-300
+                            mx-auto"
+                    >
+                        {stackImgs}
+                    </div>
+
                     <h1 id={"p-" + title + "-title"} className="pb-2 text-xl">
                         {title}
                     </h1>

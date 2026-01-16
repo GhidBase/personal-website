@@ -7,6 +7,13 @@ import ldg from "../assets/ldg-2.png";
 import bst from "../assets/BST.webp";
 import filemaker from "../assets/filemaker.avif";
 
+import postgre from "../assets/postgreSQL.svg";
+import postgre2 from "../assets/postgreSQL2.svg";
+import react from "../assets/react.svg";
+import node from "../assets/nodejslogo.svg";
+import prisma from "../assets/prisma.svg";
+import filemakersvg from "../assets/filemaker.svg";
+
 const aboutMe = (
     <Fragment>
         <p>
@@ -40,6 +47,14 @@ const projects = [
         ),
         imgSrc: ldg,
         slug: "/ldg",
+        stackImgs: (
+            <Fragment>
+                <img src={react} alt="" />
+                <img src={node} alt="" />
+                <img src={postgre2} alt="" />
+                <img src={prisma} alt="" />
+            </Fragment>
+        ),
     },
     {
         id: 1,
@@ -55,6 +70,7 @@ const projects = [
         ),
         imgSrc: bst,
         slug: "/dsa",
+        stackImgs: <img src={node} alt="" />,
     },
     {
         id: 2,
@@ -69,6 +85,7 @@ const projects = [
         ),
         imgSrc: filemaker,
         slug: "/filemaker",
+        stackImgs: <img src={filemakersvg} alt="" />,
     },
 ];
 

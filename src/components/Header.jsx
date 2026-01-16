@@ -2,6 +2,9 @@ import portrait from "../assets/portrait.jpg";
 import email from "../assets/email.svg";
 import linkedIn from "../assets/linkedIn3.svg";
 import github from "../assets/github.svg";
+import resume from "../assets/resume.svg";
+import resumePDF from "../assets/Resume.pdf";
+import postgre from "../assets/postgreSQL2.svg";
 import { useState } from "react";
 export default function Header({
     aboutMe,
@@ -82,6 +85,13 @@ export default function Header({
                     className="flex justify-center md:absolute right-9 bottom-6
                     gap-12 h-12 mt-2"
                 >
+                    <a
+                        href={resumePDF}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src={resume} className="h-full" alt="" />
+                    </a>
                     <a
                         href="https://github.com/GhidBase?tab=overview&from=2025-12-01&to=2025-12-31"
                         target="_blank"

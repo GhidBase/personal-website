@@ -9,6 +9,7 @@ export default function Projects({ projects, className }) {
                     description={project.description}
                     imgSrc={project.imgSrc}
                     slug={project.slug}
+                    stackImgs={project.stackImgs}
                 ></Project>
             ))}
         </div>
