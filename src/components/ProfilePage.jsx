@@ -103,12 +103,12 @@ export default function ProfilePage() {
                 className="
                     text-center w-full text-5xl md:text-6xl mt-5 fade-in-two
                     md:max-w-260 2xl:max-w-none
-                    px-10 md:px-18 xl:px-0 2xl:px-40"
+                    px-10 md:px-18 xl:px-0 2xl:px-40
+                    mb-[72px]
+                    "
             >
                 My Work
             </h1>
-            <br />
-            <br />
             <Projects
                 projects={projects}
                 className={`

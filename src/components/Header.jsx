@@ -82,30 +82,53 @@ export default function Header({
                 <div className={aboutMeClassName}>{aboutMe}</div>
                 <br />
                 <div
-                    className="flex justify-center md:absolute right-9 bottom-6
-                    gap-12 h-12 mt-2"
+                    className="flex justify-center md:absolute right-12 bottom-6
+                        gap-6 h-20 mt-2"
                 >
-                    <a
-                        href={resumePDF}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src={resume} className="h-full" alt="" />
-                    </a>
-                    <a
-                        href="https://github.com/GhidBase?tab=overview&from=2025-12-01&to=2025-12-31"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src={github} className="h-full" alt="" />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/dylan-simon-a5b324317/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src={linkedIn} className="h-full" alt="" />
-                    </a>
+                    {/* Resume */}
+                    <div className="flex flex-col items-center flex-1">
+                        <a
+                            href={resumePDF}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center h-full aspect-square rounded-lg 
+                                bg-neutral-700 hover:bg-neutral-600 hover:-translate-y-0.5 overflow-hidden
+                                transition p-3"
+                        >
+                            <img src={resume} className="" alt="Resume" />
+                        </a>
+                        <p className="text-xs text-gray-400 mt-1">Resume</p>
+                    </div>
+
+                    {/* GitHub */}
+                    <div className="flex flex-col items-center">
+                        <a
+                            href="https://github.com/GhidBase"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center h-full aspect-square rounded-lg 
+                                bg-neutral-700 hover:bg-neutral-600 hover:-translate-y-0.5 overflow-hidden
+                                transition p-3"
+                        >
+                            <img src={github} className="" alt="GitHub" />
+                        </a>
+                        <p className="text-xs text-gray-400 mt-1">GitHub</p>
+                    </div>
+
+                    {/* LinkedIn */}
+                    <div className="flex flex-col items-center">
+                        <a
+                            href="https://www.linkedin.com/in/dylan-simon-a5b324317/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center h-full aspect-square rounded-lg 
+                                bg-neutral-700 hover:bg-neutral-600 hover:-translate-y-0.5 overflow-hidden
+                                transition p-3"
+                        >
+                            <img src={linkedIn} className="" alt="LinkedIn" />
+                        </a>
+                        <p className="text-xs text-gray-400 mt-1">LinkedIn</p>
+                    </div>
                 </div>
             </div>
             <div

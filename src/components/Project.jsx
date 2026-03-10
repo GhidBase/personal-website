@@ -31,7 +31,6 @@ export default function Project({
                 id={title + "detail-button"}
                 onClick={() => navigate(slug)}
                 className="
-                        pointer-events-none group-focus:pointer-events-auto md:group-hover:pointer-events-auto
                         absolute inset-0 flex items-center justify-center
                         scale-150 md:scale-200
                         opacity-0 group-hover:opacity-100! will-change-[opacity]
@@ -69,12 +68,17 @@ export default function Project({
                 <span
                     id={title + "-mobile-details-button"}
                     className="
-                    absolute bottom-3 right-4
-                    text-sm text-white/70
-                    tracking-wide
-                    pointer-events-none
-                    z-1
-                    md:hidden"
+                      absolute bottom-3 right-4
+                      text-md text-white
+                      bg-black/35
+                      border border-white/15
+                      rounded-full
+                      px-3 py-1
+                      tracking-wide
+                      pointer-events-none
+                      z-10
+                      md:hidden
+                      "
                 >
                     Details →
                 </span>
