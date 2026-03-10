@@ -86,7 +86,7 @@ export default function Header({
                         gap-6 h-20 mt-2"
                 >
                     {/* Resume */}
-                    <div className="flex flex-col items-center flex-1">
+                    <div className="flex flex-col items-center ">
                         <a
                             href={resumePDF}
                             target="_blank"
