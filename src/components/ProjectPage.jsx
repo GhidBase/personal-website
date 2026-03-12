@@ -191,7 +191,7 @@ export default function ProjectPage({ title }) {
                         <h2 className="text-3xl font-semibold mb-10">
                             Scale &amp; Impact
                         </h2>
-                        <div className="flex flex-col md:flex-row gap-12 md:items-start">
+                        <div className="flex flex-col md:flex-row gap-12 md:items-center">
                             <div className="shrink-0 text-center md:text-left">
                                 <p className="text-7xl md:text-8xl font-bold text-white leading-none">
                                     700k+
@@ -200,14 +200,14 @@ export default function ProjectPage({ title }) {
                                     lifetime page views
                                 </p>
                             </div>
-                            <div className="space-y-4 md:pt-2">
+                            <div className="space-y-5">
                                 {[
                                     "Consistent organic traffic driven by search engine indexing and community sharing — no paid promotion",
                                     "Sole developer across the entire stack: data modeling, API design, frontend, CMS, infrastructure, and ongoing maintenance",
                                     "Platform architecture supports future expansion to additional games with no structural changes required",
                                 ].map((item) => (
                                     <div key={item} className="pl-4 border-l-2 border-zinc-700">
-                                        <p className="text-zinc-300 text-sm leading-relaxed">{item}</p>
+                                        <p className="text-zinc-300 leading-relaxed">{item}</p>
                                     </div>
                                 ))}
                             </div>
