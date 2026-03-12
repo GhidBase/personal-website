@@ -123,6 +123,22 @@ export default function ProfilePage() {
                 gap-10
                 fade-in-two`}
             ></Projects>
+            <section className="
+                w-full flex flex-col items-center
+                md:max-w-260 2xl:max-w-none
+                px-10 md:px-18 xl:px-0 2xl:px-40
+                pb-20 fade-in-two
+                ">
+                <div className="w-full aspect-video max-w-4xl">
+                    <iframe
+                        className="w-full h-full rounded-xl"
+                        src="https://www.youtube.com/embed/H-x20Zzw06Y"
+                        title="YouTube video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </section>
             <Footer
                 height="h-125"
                 className="
